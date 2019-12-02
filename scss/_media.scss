@@ -127,7 +127,10 @@
     .main-submenu {
         top: 42px;
     }
-
+    .main-submenu li a{
+        font-size: 14px;
+        line-height: 16px
+    }
     .footer__socials-box {
         min-width: inherit;
         margin-right: 70px;
