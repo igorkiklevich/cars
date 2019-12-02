@@ -1,0 +1,593 @@
+@media (max-width:1200px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header__zakaz-box {
+        min-width: inherit;
+
+        a {
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+            width: 144px;
+        }
+    }
+
+    .zakaz-box__zvonok {
+        padding: 10px 10px 9px 10px;
+    }
+
+    .zakaz-box__zayavka {
+        padding: 11px 12px 10px 12px;
+    }
+
+    .header__phones {
+        min-width: 190px;
+        margin-right: 25px;
+    }
+
+    .header__phones-box {
+        a {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        &::before {
+            width: 22px;
+            height: 22px;
+            background-size: 100%;
+        }
+    }
+
+    .logo img,
+    .footer-logo img {
+        max-width: 131px;
+    }
+
+    .language-select {
+        a {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        img {
+            width: 20px;
+        }
+
+        &::after {
+            right: 8px;
+        }
+    }
+
+    .header__login {
+        &::before {
+            width: 21px;
+            height: 21px;
+        }
+    }
+
+    .header__social {
+        min-width: inherit;
+        max-width: 75px;
+
+        img {
+            width: 41px;
+        }
+
+        a {
+            display: inline-block;
+            width: 37px;
+            text-align: center;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                img {
+                    width: 32px;
+                }
+            }
+
+            &:last-child {
+                padding-left: 0;
+
+                img {
+                    width: 32px;
+                }
+            }
+        }
+    }
+
+    .main-menu {
+        justify-content: space-evenly;
+
+        li a {
+            font-size: 17px;
+            line-height: 20px;
+        }
+    }
+
+    .header__search {
+        margin-left: 50px;
+
+        .search-icon {
+            width: 33px;
+            height: 33px;
+            background-size: 100%;
+        }
+    }
+
+    .header__dealer,
+    .header__login {
+        a {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    .main-submenu {
+        top: 42px;
+    }
+
+    .footer__socials-box {
+        min-width: inherit;
+        margin-right: 70px;
+    }
+
+    .soc-link img {
+        width: 47px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .footer__logo {
+        margin-right: 200px;
+    }
+
+    .footer {
+        padding-top: 33px;
+    }
+
+    .footer__sitemap {
+        min-width: 140px;
+        min-height: 65px;
+        padding-top: 13px;
+
+        a {
+            font-size: 14px;
+            line-height: 16px;
+            display: block;
+        }
+    }
+
+    .footer__search form input {
+        height: 28px;
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    .footer-languages {
+        max-width: 113px;
+        padding: 2px 0 3px 7px;
+
+        .language-select {
+            &::after {
+                right: 7px;
+                width: 9px;
+                height: 9px;
+                top: 55%;
+                background-size: 100%;
+            }
+
+            a {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    //content styles
+    .breadcrumbs li a {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .main__subtitle {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .top-block {
+        margin-top: -63px;
+
+        h1 {
+            font-size: 36px;
+            line-height: 42px;
+            padding-top: 105px;
+        }
+    }
+
+    .top-block .top-block__wrapper {
+        min-height: 218px;
+    }
+
+    .top-block h1::after {
+        width: 28px;
+        height: 4px;
+    }
+
+    .process-pokupki__tab {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .tabs-content-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .tabs-content-text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .main__dop-questions-title{
+        font-size: 28px;
+line-height: 33px;    padding-bottom: 3px;
+&::after{
+    height: 4px;
+}
+    }
+    .main__dop-questions-subtitle{
+        font-size: 20px;
+line-height: 23px;
+    }
+    .main__dop-questions-form form input{
+        min-width: inherit;
+        max-width: 210px;
+    }
+    .main__dop-questions-form form button{
+        min-width: inherit;
+        max-width: 210px;
+    }
+    .main__dop-questions-form form{
+        max-width: 870px;
+    }
+}
+
+@media(max-width:1085px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .header__phones {
+        margin-right: 6px;
+    }
+
+    .header__social {
+        margin-right: 7px;
+    }
+
+    .header__dealer {
+        margin-right: 15px;
+    }
+
+    .footer__left {
+        width: 65%;
+    }
+
+    .footer__logo {
+        margin-right: 0;
+    }
+
+}
+
+@media(max-width:1024px) {
+    .header__top {
+        padding: 14px 0;
+
+        .container {
+            align-items: inherit;
+        }
+    }
+
+    .header__mobile {
+        display: block;
+        position: relative;
+    }
+
+    .header__mobile-box {
+        position: fixed;
+        top: 56px;
+        width: 241px;
+        min-height: 335px;
+        z-index: 10;
+        min-width: 241px;
+        background: $header_bg;
+        padding: 25px 31px;
+        transition: transform .3s;
+        left: 100%;
+
+        .header__phones,
+        .header__social,
+        .header__dealer,
+        .header__nav,
+        .header__search {
+            display: block;
+        }
+
+        .header__phones-box {
+            margin-bottom: 17px;
+        }
+
+        .header__social {
+            text-align: center;
+            min-width: auto;
+            max-width: inherit;
+            display: block;
+            margin-right: 0;
+            margin-bottom: 20px;
+            text-align-last: left;
+
+            a:first-child {
+                position: relative;
+                top: 4px;
+            }
+        }
+
+        .header__dealer {
+            margin-bottom: 22px;
+            text-align: left;
+        }
+
+        .header__search {
+            margin-left: 0;
+
+            form input {
+                margin-bottom: 22px;
+            }
+        }
+
+        .language-select {
+            margin-bottom: 18px;
+            max-width: 115px;
+        }
+
+    }
+
+    .header__phones,
+    .header__social,
+    .header__dealer,
+    .header__nav,
+    .header__search {
+        display: none;
+    }
+
+    .header__zakaz-box {
+        margin-right: 0;
+    }
+
+    .zakaz-box__zvonok {
+        margin-left: 12px;
+        border-left: 1px solid #7FFF00;
+    }
+
+    li.main-menu-item {
+        padding: 7px 13px 7px;
+    }
+
+    .main-submenu {
+        top: 47px;
+    }
+
+    .main-menu li a {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .main-submenu li a {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+}
+
+@media(max-width:950px) {
+    li.main-menu-item {
+        padding: 7px 0px 7px;
+    }
+
+    .main-menu li.with-submenu a::before {
+        right: -5px;
+    }
+}
+
+@media(max-width:900px) {
+    .header__zakaz-box {
+        margin-right: 20%;
+    }
+
+    .soc-link img {
+        width: 35px;
+    }
+
+    .footer__sitemap a:first-child {
+        margin-bottom: 3px;
+    }
+
+    .footer__socials-box {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+@media(max-width:800px) {
+    .footer__sitemap {
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    .header__bottom {
+        display: none;
+    }
+
+    .header__mobile-menu {
+        display: block;
+        margin-top: 25px;
+
+        ul {
+            display: block;
+        }
+
+        ul.main-submenu {
+            background: none;
+            position: relative;
+            top: 13px;
+            text-align: left;
+            left: 0;
+            padding: 5px 0;
+            margin-bottom: 20px;
+            display: none;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .with-submenu.show {
+        .main-submenu {
+            display: block;
+        }
+    }
+
+    .main-menu li.with-submenu a::before {
+        right: -20px;
+    }
+
+    li.main-menu-item {
+        margin-bottom: 10px;
+    }
+
+    .main-menu li a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header__mobile-box {
+        top: 75px;
+    }
+
+    .header__zakaz-box {
+        margin-right: 0;
+    }
+
+    .footer .container {
+        flex-wrap: wrap;
+    }
+
+    .footer__left,
+    .footer__right {
+        width: 100%;
+    }
+
+    .footer-logo img {
+        max-width: 96px;
+    }
+
+    .soc-link img {
+        width: 29px;
+    }
+
+    .footer__socials-box {
+        text-align: right;
+        margin-bottom: 12px;
+    }
+
+    .footer__sitemap {
+        border: none;
+        text-align: left;
+
+        a {
+            font-size: 12px;
+            line-height: 14px;
+
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .footer__search form input {
+        height: 22px;
+        min-width: inherit;
+        max-width: 115px;
+        padding: 8px 0 11px 8px;
+        background-size: 12px;
+
+        &::placeholder {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+
+    .footer-languages {
+        max-width: 93px
+    }
+
+    .footer-languages .language-select {
+        a {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        img {
+            width: 16px;
+        }
+
+        &::after {
+            right: 5px;
+            background-size: 81%;
+        }
+    }
+
+    .copyright {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@media(max-width:560px) {
+    .header__zakaz-box {
+        display: none;
+    }
+
+    .header__mobile>a {
+        font-size: 7px;
+        line-height: 10px;
+
+        &::after {
+            width: 21px;
+            height: 3px;
+            top: 19px;
+            right: 1px;
+        }
+
+        &::before {
+            top: 11px;
+            right: 1px;
+            width: 21px;
+            height: 3px;
+        }
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}

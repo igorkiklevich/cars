@@ -15,10 +15,6 @@
         padding: 7px 0;
         background: $header_bg;
 
-        a {
-            font-size: 16px;
-            line-height: 19px;
-        }
     }
 }
 
@@ -36,6 +32,8 @@
     a {
         text-align: center;
         width: 171px;
+        font-size: 16px;
+        line-height: 19px;
     }
 }
 
@@ -75,6 +73,8 @@
         font-weight: 300;
         text-align: center;
         display: inline-block;
+        font-size: 16px;
+        line-height: 19px;
 
         &:first-child {
             margin-bottom: 7px;
@@ -108,6 +108,11 @@
     text-align: center;
     min-width: 114px;
     width: 100%;
+
+    a {
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 
 .header__nav {
@@ -117,6 +122,11 @@
 .language-select {
     position: relative;
     margin-bottom: 15px;
+
+    a {
+        font-size: 16px;
+        line-height: 19px;
+    }
 
     &::after {
         @extend %after_language-select;
@@ -158,6 +168,11 @@
     position: relative;
     padding-left: 31px;
 
+    a {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
     &::before {
         position: absolute;
         content: '';
@@ -168,6 +183,46 @@
         height: 24px;
         background: url(../images/icons/icon-login.png) no-repeat center / auto;
     }
+}
+
+//mobile-button
+.header__mobile {
+    display: none;
+}
+
+.header__mobile>a {
+    position: relative;
+    font-weight: bold;
+    font-size: 8.5px;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 16px;
+        right: 0;
+        width: 29px;
+        height: 4px;
+        background: #fff;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 26px;
+        right: 0;
+        width: 29px;
+        height: 4px;
+        background: #fff;
+    }
+}
+.menu-opened .header__mobile-box{
+    transform: translateX(-241px);
+}
+.header__mobile-menu{
+    display: none;
 }
 
 //header__bottom
@@ -183,25 +238,93 @@
     max-width: 1034px;
 
     li {
+        position: relative;
+
+        &:hover {
+            a {
+                color: $orange;
+            }
+
+        }
+
         a {
             font-size: 20px;
             line-height: 23px;
             position: relative;
+            padding: 22px 13px 23px;
         }
     }
 
     li.with-submenu {
+
         a {
             &::before {
                 position: absolute;
                 content: '';
-                bottom: -4px;
-                right: -20px;
+                top: 53%;
+                right: -10px;
                 transform: translateY(-50%);
                 width: 13px;
                 height: 13px;
                 background: url(../images/icons/arrow-down.png) no-repeat center / auto;
             }
+        }
+
+        &:hover {
+            a {
+
+                &::before {
+                    transform: translateY(0);
+                    transform: rotate(-180deg);
+                    top: 47%
+                }
+            }
+
+            .main-submenu {
+                opacity: 1;
+                visibility: visible;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-submenu {
+    position: absolute;
+    top: 47px;
+    right: 0;
+    text-align: center;
+    visibility: hidden;
+    transition: opacity .2s;
+    opacity: 0;
+    padding: 0 20px 10px 20px;
+    width: 100%;
+    min-width: max-content;
+    background: rgba(0, 0, 0, 0.65);
+    left: 10px;
+
+    li {
+        margin-bottom: 9px;
+
+        a {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
@@ -287,7 +410,7 @@
     background: $bg_gray;
 }
 
-.process-pokupki__tabs-content+.main__subtitle {
+.tabs-content+.main__subtitle {
     margin: 0 auto;
     padding: 50px 0;
     text-align: center;
@@ -332,7 +455,7 @@
     }
 }
 
-.process-pokupki__tabs-content {
+.tabs-content {
     display: none;
     background: #fff;
 
@@ -342,20 +465,20 @@
     }
 }
 
-.process-pokupki__tabs-content-box {
+.tabs-content-box {
     padding-top: 51px;
     position: relative;
     counter-reset: numeric;
 }
 
-.process-pokupki__tabs-content-item {
+.tabs-content-item {
     display: flex;
     justify-content: space-between;
     position: relative;
     padding-bottom: 50px;
 
     &-line {
-        width: 100%;
+        width: inherit;
         height: 100%;
         left: 47px;
         top: 0;
@@ -384,13 +507,13 @@
 
 }
 
-.process-pokupki__tabs-content-item:last-child {
-    .process-pokupki__tabs-content-item-line {
+.tabs-content-item:last-child {
+    .tabs-content-item-line {
         display: none;
     }
 }
 
-.process-pokupki__tabs-content-item-left {
+.tabs-content-item-left {
     padding-right: 45px;
 
     img {
@@ -399,12 +522,12 @@
     }
 }
 
-.process-pokupki__tabs-content-item-right {
+.tabs-content-item-right {
     width: 100%;
     max-width: 934px;
 }
 
-.process-pokupki__tabs-content-item-title {
+.tabs-content-title {
     font-size: 22px;
     line-height: 26px;
     font-weight: 500;
@@ -412,7 +535,7 @@
     text-transform: uppercase;
 }
 
-.process-pokupki__tabs-content-item-text {
+.tabs-content-text {
     font-size: 17px;
     line-height: 20px;
 
@@ -494,6 +617,7 @@
             text-transform: uppercase;
             background: $orange;
             color: #fff;
+
         }
     }
 }
@@ -509,11 +633,13 @@
 
 .footer .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-bottom: 13px;
 }
-
+.footer__left, .footer__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .footer__logo {
     margin-right: 214px;
 }
@@ -521,6 +647,7 @@
 .footer__socials-box {
     margin-right: 72px;
     min-width: 325px;
+    text-align: right;
     width: 100%;
 }
 
@@ -555,7 +682,8 @@
     }
 }
 
-.footer__search {
+.footer__search,
+.header__search {
     text-align: right;
 
     form {
@@ -570,6 +698,7 @@
             background-position: 94% 50%;
             background-size: inherit;
             position: relative;
+            color: #fff;
 
             &::placeholder {
                 color: #fff;
